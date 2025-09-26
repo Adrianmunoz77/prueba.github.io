@@ -1,0 +1,100 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.contenedor{
+    perspective: 250px;
+    width: 300px;
+    height: 150px;
+    position: relative;
+}
+.tarjeta{
+    width: 50px;
+    height: 100px;
+    background-color: cornflowerblue;
+    font-size: 40px;
+    position: absolute;
+    top: 35px;
+    left: 125px;
+    border-radius: 9px;
+    text-align: center;
+    cursor: pointer;
+    animation: Carrusel 10s linear infinite;
+}
+@keyframes Carrusel{
+    from{
+        transform: rotateY(360deg)
+translateZ(100px);
+        z-index: 10;
+        opacity: 09;
+    }
+    50%{
+        z-index: -10;
+        }
+    to{
+        transform: rotateX(0deg) translateZ(100px);
+    }
+}
+#CR7{
+    background-image: 
+url(img/CR7.jpeg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -1s;
+}
+#CR7:hover{
+    box-shadow: 0px 0px 10px red;
+}
+#marcelo{
+    background-image: 
+url(img/marcelo.jpeg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -3s;
+}
+#marelo:hover{
+    box-shadow: 0px 0px 10px red;
+}
+
+#Ney{
+    background-image: 
+url(img/Ney.jpeg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -5s;
+}
+#Ney:hover{
+    box-shadow: 0px 0px 10px red;
+}
+
+#kaká{
+    background-image: 
+url(img/kaká.jpeg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -7s;
+}
+#kaká:hover{
+    box-shadow: 0px 0px 10px red;
+}
+
+#Bale{
+    background-image: 
+url(img/Bale.jpeg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -9s;
+}
+#Bale:hover{
+    box-shadow: 0px 0px 10px red;
+}
+.tarjeta h3{
+    color:red;
+    font-size: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 70px;
+    background-color: black;
+}
